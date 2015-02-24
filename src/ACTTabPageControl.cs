@@ -36,12 +36,14 @@ namespace ACTTimeline
             plugin.TimelineView.TimelineFontChanged += TimelineView_TimelineFontChanged;
             plugin.TimelineView.ColumnWidthChanged += TimelineView_ColumnWidthChanged;
             plugin.TimelineView.OpacityChanged += TimelineView_OpacityChanged;
+            plugin.TimelineView.PlaySoundByACT = checkBoxPlaySoundByACT.Checked;
             plugin.Controller.CurrentTimeUpdate += Controller_CurrentTimeUpdate;
             plugin.Controller.TimelineUpdate += Controller_TimelineUpdate;
             plugin.Controller.PausedUpdate += Controller_PausedUpdate;
             TimelineView_TimelineFontChanged(this, null);
             TimelineView_ColumnWidthChanged(this, null);
             TimelineView_OpacityChanged(this, null);
+            
             Controller_TimelineUpdate(this, null);
             Controller_PausedUpdate(this, null);
         }

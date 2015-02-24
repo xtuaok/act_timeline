@@ -94,6 +94,7 @@ namespace ACTTimeline
                 Settings.AddIntSetting("TextWidth");
                 Settings.AddIntSetting("BarWidth");
                 Settings.AddIntSetting("OpacityPercentage");
+                Settings.AddBooleanSetting("PlaySoundByACT");
 
                 SetupTab();
                 InjectButton();
